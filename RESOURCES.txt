@@ -1,9 +1,9 @@
 RESOURCES: список ресурсов проекта для ИИ-агентов
 ====================================================================
-Репозиторий: https://github.com/Gl1ch5/asets
-Ветка: ccr-a6947091-rnmk7v
+Репозиторий: https://github.com/Gl1ch5/assets-for-ai-agents
+Ветка: main
 Формат: RAW-ССЫЛКА | тип | размер | описание
-База для всех ссылок: https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/ + имя файла
+База для всех ссылок: https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/ + имя файла
 Для скачивания бинарников использовать прямую raw-ссылку (не страницу blob на GitHub).
 
 --------------------------------------------------------------------
@@ -12,14 +12,14 @@ RESOURCES: список ресурсов проекта для ИИ-агенто
    Заброшенный больничный бетонный пол, потёртый, грязный, со сколами
    краски. Размер материала 1 x 1 м. Для archviz, игр, VFX.
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_Albedo.jpg          | texture/albedo    | 3.7 MB | базовый цвет (Base Color), sRGB
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_Normal.jpg          | texture/normal    | 6.9 MB | карта нормалей (проверить соглашение OpenGL/DirectX)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_Roughness.jpg       | texture/roughness | 2.1 MB | шероховатость, линейная (non-color)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_AO.jpg              | texture/ao        | 1.5 MB | ambient occlusion, линейная (non-color)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_Displacement.jpg    | texture/height    | 0.6 MB | карта высот, 8-бит превью
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw_2K_Displacement.exr    | texture/height    | 13 MB  | карта высот, 32-бит float, EXR (PIZ), 2048x2048
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/tltleibaw.json                   | metadata          | 43 KB  | метаданные: теги, превью, физический размер, категории
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Floors_Concrete_tltleibaw_surface_Preview.png | preview | 1 MB | превью материала 720x720
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Albedo.jpg          | texture/albedo    | 3.7 MB | базовый цвет (Base Color), sRGB
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Normal.jpg          | texture/normal    | 6.9 MB | карта нормалей (проверить соглашение OpenGL/DirectX)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Roughness.jpg       | texture/roughness | 2.1 MB | шероховатость, линейная (non-color)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_AO.jpg              | texture/ao        | 1.5 MB | ambient occlusion, линейная (non-color)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Displacement.jpg    | texture/height    | 0.6 MB | карта высот, 8-бит превью
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Displacement.exr    | texture/height    | 13 MB  | карта высот, 32-бит float, EXR (PIZ), 2048x2048
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw.json                   | metadata          | 43 KB  | метаданные: теги, превью, физический размер, категории
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Floors_Concrete_tltleibaw_surface_Preview.png | preview | 1 MB | превью материала 720x720
 
 --------------------------------------------------------------------
 2. ТЕКСТУРЫ: PBR-материал "Concrete Pavement" (id: vcigedc)
@@ -27,14 +27,14 @@ https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Floors_Concre
    Старое уличное бетонное покрытие Японии, серое, с плитами, швами и
    грязью. Размер материала 2 x 2 м. Экстерьер, городская и сельская среда.
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_Albedo.jpg            | texture/albedo    | 5.2 MB | базовый цвет (Base Color), sRGB
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_Normal.jpg            | texture/normal    | 7.1 MB | карта нормалей (проверить соглашение OpenGL/DirectX)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_Roughness.jpg         | texture/roughness | 1.9 MB | шероховатость, линейная (non-color)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_AO.jpg                | texture/ao        | 2.5 MB | ambient occlusion, линейная (non-color)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_Displacement.jpg      | texture/height    | 0.5 MB | карта высот, 8-бит превью
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc_2K_Displacement.exr      | texture/height    | 13 MB  | карта высот, 32-бит float, EXR (PIZ), 2048x2048
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/vcigedc.json                     | metadata          | 42 KB  | метаданные: семантические теги, цвет, страна, размер, превью
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Concrete_Slab_vcigedc_surface_Preview.png | preview | 1 MB | превью материала
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_Albedo.jpg            | texture/albedo    | 5.2 MB | базовый цвет (Base Color), sRGB
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_Normal.jpg            | texture/normal    | 7.1 MB | карта нормалей (проверить соглашение OpenGL/DirectX)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_Roughness.jpg         | texture/roughness | 1.9 MB | шероховатость, линейная (non-color)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_AO.jpg                | texture/ao        | 2.5 MB | ambient occlusion, линейная (non-color)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_Displacement.jpg      | texture/height    | 0.5 MB | карта высот, 8-бит превью
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc_2K_Displacement.exr      | texture/height    | 13 MB  | карта высот, 32-бит float, EXR (PIZ), 2048x2048
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/vcigedc.json                     | metadata          | 42 KB  | метаданные: семантические теги, цвет, страна, размер, превью
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Concrete_Slab_vcigedc_surface_Preview.png | preview | 1 MB | превью материала
 
 --------------------------------------------------------------------
 3. ТЕКСТУРА: синяя мозаичная плитка с бликами воды
@@ -42,51 +42,60 @@ https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Concrete_Slab
    1024x1024, JPEG, 3 канала. Квадратная мозаика синих стеклянных
    плиток с серыми швами и световыми бликами. Бесшовность не проверена.
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/image_301e3b7.jpg                | texture/albedo    | 1.2 MB | мозаика бассейна, 1024x1024
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/image_301e3b7.jpg                | texture/albedo    | 1.2 MB | мозаика бассейна, 1024x1024
 
 --------------------------------------------------------------------
 4. 3D-МОДЕЛЬ: рука в перчатках
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/hand_with_gloves.glb             | model/gltf-binary | 8.2 MB | glTF 2.0 (GLB), рука в перчатках; есть ли текстуры/анимации внутри, не проверено
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/hand_with_gloves.glb             | model/gltf-binary | 8.2 MB | glTF 2.0 (GLB), рука в перчатках; есть ли текстуры/анимации внутри, не проверено
 
 --------------------------------------------------------------------
 5. HDRI: освещение и небо (equirectangular, 4K, Radiance HDR)
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/kloppenheim_06_puresky_4k.hdr    | hdri              | 17 MB  | чистое небо, 4K, для освещения и фона, окружение Kloppenheim
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/mud_road_puresky_4k.hdr          | hdri              | 16 MB  | чистое небо над грунтовой дорогой, 4K
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kloppenheim_06_puresky_4k.hdr    | hdri              | 17 MB  | чистое небо, 4K, для освещения и фона, окружение Kloppenheim
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/mud_road_puresky_4k.hdr          | hdri              | 16 MB  | чистое небо над грунтовой дорогой, 4K
 
 --------------------------------------------------------------------
 6. ЗВУКИ: шаги игрока (Player_player_footsteps_*)
    Формат WAV. Варианты поверхностей для выбора случайного звука шага.
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_concrete1.wav | audio/sfx | 43 KB | шаг по бетону, вариант 1
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_concrete2.wav | audio/sfx | 55 KB | шаг по бетону, вариант 2
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_concrete3.wav | audio/sfx | 64 KB | шаг по бетону, вариант 3
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_concrete4.wav | audio/sfx | 39 KB | шаг по бетону, вариант 4
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_dirt1.wav    | audio/sfx | 44 KB | шаг по грунту, вариант 1
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_dirt2.wav    | audio/sfx | 76 KB | шаг по грунту, вариант 2
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_dirt3.wav    | audio/sfx | 76 KB | шаг по грунту, вариант 3 (тот же размер, что dirt2; возможно дубль, не проверено)
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_player_footsteps_dirt4.wav    | audio/sfx | 55 KB | шаг по грунту, вариант 4
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_concrete1.wav | audio/sfx | 43 KB | шаг по бетону, вариант 1
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_concrete2.wav | audio/sfx | 55 KB | шаг по бетону, вариант 2
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_concrete3.wav | audio/sfx | 64 KB | шаг по бетону, вариант 3
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_concrete4.wav | audio/sfx | 39 KB | шаг по бетону, вариант 4
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_dirt1.wav    | audio/sfx | 44 KB | шаг по грунту, вариант 1
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_dirt2.wav    | audio/sfx | 76 KB | шаг по грунту, вариант 2
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_dirt3.wav    | audio/sfx | 76 KB | шаг по грунту, вариант 3 (тот же размер, что dirt2; возможно дубль, не проверено)
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_player_footsteps_dirt4.wav    | audio/sfx | 55 KB | шаг по грунту, вариант 4
 
 --------------------------------------------------------------------
 7. ЗВУКИ: оружие игрока, пистолет (Player_weapons_pistol_*)
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_weapons_pistol_pistol_fire2.wav   | audio/sfx | 140 KB | выстрел из пистолета, вариант 2
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_weapons_pistol_pistol_fire3.wav   | audio/sfx | 107 KB | выстрел из пистолета, вариант 3
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_weapons_pistol_pistol_empty.wav   | audio/sfx | 7 KB   | щелчок пустого магазина
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/Player_weapons_pistol_pistol_reload1.wav | audio/sfx | 42 KB  | перезарядка пистолета, вариант 1
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_weapons_pistol_pistol_fire2.wav   | audio/sfx | 140 KB | выстрел из пистолета, вариант 2
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_weapons_pistol_pistol_fire3.wav   | audio/sfx | 107 KB | выстрел из пистолета, вариант 3
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_weapons_pistol_pistol_empty.wav   | audio/sfx | 7 KB   | щелчок пустого магазина
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/Player_weapons_pistol_pistol_reload1.wav | audio/sfx | 42 KB  | перезарядка пистолета, вариант 1
 (вариант fire1 отсутствует в репозитории)
 
 --------------------------------------------------------------------
 8. ЗВУКИ: окружение
 --------------------------------------------------------------------
-https://raw.githubusercontent.com/Gl1ch5/asets/ccr-a6947091-rnmk7v/industrial_ambient_1.wav         | audio/ambient | 700 KB | фоновый промышленный эмбиент, луп не проверен
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/industrial_ambient_1.wav         | audio/ambient | 700 KB | фоновый промышленный эмбиент, луп не проверен
 
 --------------------------------------------------------------------
-ИТОГО: 33 файла в репозитории (без .git и без этого файла).
+9. МОДЕЛЬ МАШИНЫ: VIPER_SRT (Assetto Corsa)
+   Архив мода AC: VIPER_SRT/body.kn5, collider.kn5, data/*.ini (aero, ai,
+   brakes, car, cameras), текстуры (dds/png), анимация руля steer.ksanim.
+   Для Godot/веба сначала конвертировать KN5 в glTF.
+--------------------------------------------------------------------
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar | car_mod/rar | 22 MB | VIPER_SRT для Assetto Corsa (KN5 + ini + текстуры), не glTF
+
+--------------------------------------------------------------------
+ИТОГО: 34 файла в репозитории (без .git и без этого файла).
   - материалы (текстуры, превью, json): 17
   - текстура мозаики: 1
   - 3D-модель: 1
   - HDRI: 2
   - звуки: 13
+  - модель машины (Assetto Corsa): 1
   - файл, подготовленный для агентов: RESOURCES.txt
