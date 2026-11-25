@@ -115,7 +115,19 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   Удары (000..004): impactBell_heavy, impactGeneric_light, impactGlass_*, impactMetal_*, impactMining, impactPlank_medium, impactPlate_*, impactPunch_*, impactSoft_*, impactTin_medium, impactWood_*
 
 --------------------------------------------------------------------
-ИТОГО: 778 файлов в репозитории (без .git, README.md, RESOURCES.txt и INDEX.txt).
+11. RETRO & HORROR SFX (Half-Life 1 & 2, 538 WAV, не для коммерции)
+    Полный индекс всех 538 файлов с прямыми URL и размерами:
+    https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/retro-horror-sfx/INDEX.txt
+    Отдельный промпт для агента: PROMPT_HORROR_SFX.txt
+--------------------------------------------------------------------
+- HL1 (retro-horror-sfx/hl1/, 440 WAV):
+  zombie/ (16), headcrab/ (16), ambience/ (135), doors/ (23), buttons/ (30),
+  debris/ (60), weapons/ (71), items/ (23), player/ (66)
+- HL2 (retro-horror-sfx/hl2/, 98 WAV):
+  zombie/ (45), fast_zombie/ (20), zombie_poison/ (19), headcrab/ (14)
+
+--------------------------------------------------------------------
+ИТОГО: 1316 файлов в репозитории (без .git, README.md, RESOURCES.txt, PROMPT_HORROR_SFX.txt и INDEX.txt).
   - материалы (текстуры, превью, json): 17
   - текстура мозаики: 1
   - 3D-модель: 1
@@ -123,4 +135,5 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   - звуки (корень): 13
   - модель машины (Assetto Corsa): 1
   - Kenney CC0 (kenney/): 743 (текстуры, VFX, GLB-модели, прицелы, UI/impact SFX + Preview/License)
-  - индексы для агентов: RESOURCES.txt, kenney/INDEX.txt
+  - Retro & Horror SFX (retro-horror-sfx/): 538 WAV (Half-Life 1 & 2)
+  - индексы и промпты для агентов: RESOURCES.txt, PROMPT_HORROR_SFX.txt, kenney/INDEX.txt, retro-horror-sfx/INDEX.txt

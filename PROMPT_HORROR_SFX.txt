@@ -1,0 +1,33 @@
+You have an additional Retro & Horror Game SFX pack available over plain HTTPS (personal / non-commercial prototyping use). Base URL:
+
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/retro-horror-sfx/
+
+Download only what you need with curl/wget straight from the raw URL — never open the /blob/ page.
+Full manifest of all 538 direct raw URLs + byte sizes:
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/retro-horror-sfx/INDEX.txt
+
+Rules:
+1. Keep downloaded binaries out of the project repo (use assets/ or a cache dir).
+2. All files are WAV (retro 11-22 kHz / 44.1 kHz). Pick random variants within a folder so monster, footstep, and weapon sounds do not repeat.
+3. For exact filenames before downloading, curl retro-horror-sfx/INDEX.txt first.
+
+=== HALF-LIFE 1 SFX (retro-horror-sfx/hl1/, 440 WAV) ===
+  hl1/zombie/      (16 WAV)  classic zombie idle, alert, pain, claw_strike/miss
+  hl1/headcrab/    (16 WAV)  headcrab alert, attack, pain, die
+  hl1/ambience/   (135 WAV)  industrial, underground, horror drones, alarms, wind, machinery
+  hl1/doors/       (23 WAV)  heavy bunker, blast, airlock, alien & metal doors
+  hl1/buttons/     (30 WAV)  retro switches, blips, bells, levers, locked buzzers
+  hl1/debris/      (60 WAV)  explosions, glass shatter, concrete/wood/metal debris, sparks
+  hl1/weapons/     (71 WAV)  357, shotgun, pistol, SMG, crowbar, grenade, reload & dryfire
+  hl1/items/       (23 WAV)  flashlight, medkit, ammo pickup, suit recharge
+  hl1/player/      (66 WAV)  geiger counter, breathing, footsteps (concrete/metal/dirt/grate/vent/slosh), fall/pain
+
+=== HALF-LIFE 2 ZOMBIE & HORROR SFX (retro-horror-sfx/hl2/, 98 WAV) ===
+  hl2/zombie/        (45 WAV)  Ravenholm zombie groans, alert, pain, die, claw_strike/miss
+  hl2/fast_zombie/   (20 WAV)  fast zombie screams, leap, frenzy, breathe_loop, claw
+  hl2/zombie_poison/ (19 WAV)  poison zombie heavy breathing, alert, throw, pain, die
+  hl2/headcrab/      (14 WAV)  HL2 headcrab alert, attack, idle, pain, die
+
+Example:
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/retro-horror-sfx/INDEX.txt
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/retro-horror-sfx/hl2/fast_zombie/fz_scream1.wav
