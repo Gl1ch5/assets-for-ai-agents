@@ -127,7 +127,18 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   zombie/ (45), fast_zombie/ (20), zombie_poison/ (19), headcrab/ (14)
 
 --------------------------------------------------------------------
-ИТОГО: 1316 файлов в репозитории (без .git, README.md, RESOURCES.txt, PROMPT_HORROR_SFX.txt и INDEX.txt).
+12. FAR CRY & CRYSIS SFX (307 файлов, не для коммерции)
+    Полный индекс всех 307 файлов с прямыми URL и размерами:
+    https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/INDEX.txt
+    Отдельный промпт для агента: PROMPT_FARCRY_CRYSIS_SFX.txt
+--------------------------------------------------------------------
+- Crysis Nanosuit (farcry-crysis-sfx/crysis/nanosuit/, 70 OGG):
+  modes/{armor,cloak,speed,power}, energy, binoculars, nanovision, menu, misc, psy_voices, voice
+- Far Cry (farcry-crysis-sfx/farcry/, 237 MP3):
+  trigens_boats/ (100), ambience/ (100), weapons_sfx/ (37)
+
+--------------------------------------------------------------------
+ИТОГО: 1623 файла в репозитории (без .git, README.md, RESOURCES.txt, PROMPT_*.txt и INDEX.txt).
   - материалы (текстуры, превью, json): 17
   - текстура мозаики: 1
   - 3D-модель: 1
@@ -136,4 +147,5 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   - модель машины (Assetto Corsa): 1
   - Kenney CC0 (kenney/): 743 (текстуры, VFX, GLB-модели, прицелы, UI/impact SFX + Preview/License)
   - Retro & Horror SFX (retro-horror-sfx/): 538 WAV (Half-Life 1 & 2)
-  - индексы и промпты для агентов: RESOURCES.txt, PROMPT_HORROR_SFX.txt, kenney/INDEX.txt, retro-horror-sfx/INDEX.txt
+  - Far Cry & Crysis SFX (farcry-crysis-sfx/): 307 файлов (70 OGG + 237 MP3)
+  - индексы и промпты для агентов: RESOURCES.txt, PROMPT_HORROR_SFX.txt, PROMPT_FARCRY_CRYSIS_SFX.txt, */INDEX.txt

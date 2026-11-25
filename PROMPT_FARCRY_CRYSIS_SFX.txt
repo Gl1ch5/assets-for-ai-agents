@@ -1,0 +1,34 @@
+You have an additional Far Cry & Crysis SFX pack available over plain HTTPS (personal / non-commercial prototyping use). Base URL:
+
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/
+
+Download only what you need with curl/wget straight from the raw URL — never open the /blob/ page.
+Full manifest of all 307 direct raw URLs + byte sizes:
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/INDEX.txt
+
+Rules:
+1. Keep downloaded binaries out of the project repo (use assets/ or a cache dir).
+2. Crysis files are OGG; Far Cry files are MP3.
+3. For exact filenames before downloading, curl farcry-crysis-sfx/INDEX.txt first.
+
+=== CRYSIS NANOSUIT & CEPH SFX (farcry-crysis-sfx/crysis/nanosuit/, 70 OGG) ===
+  modes/armor/      (6 OGG)  mode_armor_on, mode_armor_hit_01..05
+  modes/cloak/      (4 OGG)  mode_cloak_on, mode_cloak_off, mode_cloak_loop, mode_cloak_shoot
+  modes/speed/      (3 OGG)  mode_speed_on, mode_speed_loop, mode_speed_stop
+  modes/power/      (2 OGG)  mode_power_on, mode_power_jump
+  energy/           (4 OGG)  energy_on, energy_off, energy_restoring, energy_very_low
+  binoculars/       (6 OGG)  binocular_on/off/loop/tagged/zoom_in/zoom_out
+  nanovision/       (3 OGG)  nanovision_on/off/loop
+  menu/             (2 OGG)  menu_show, menu_hide
+  misc/             (4 OGG)  defibrillate, interference, vaporize_hud, vaporize_world
+  psy_voices/       (5 OGG)  ceph_trooper_01..03, ceph_warrior_01..02
+  voice/           (31 OGG)  Nanosuit voice lines (Armor/Cloak/Speed/Strength/Critical)
+
+=== FAR CRY SFX (farcry-crysis-sfx/farcry/, 237 MP3) ===
+  farcry/trigens_boats/ (100 MP3)  Fat Boy, Fast Trigen, Stealth Trigen, Small Trigen monster roars/attacks/pain + boat engine sounds
+  farcry/ambience/      (100 MP3)  jungle, swamp, cave, wind, water, industrial bunker ambience
+  farcry/weapons_sfx/    (37 MP3)  Desert Eagle, MP5, P90, M4A1, G36, M249, OICW, AW50, frag grenade, alert, deep drums, mercenary callouts
+
+Example:
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/INDEX.txt
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/crysis/nanosuit/modes/cloak/mode_cloak_on.ogg

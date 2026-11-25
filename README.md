@@ -137,6 +137,7 @@ Example:
   curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/prototype-textures/dark/texture_01.png
 
 Full manifest with the same data: RESOURCES.txt (and kenney/INDEX.txt for every Kenney file)
+```
 
 ## Asset index
 
@@ -160,8 +161,10 @@ Full manifest with the same data: RESOURCES.txt (and kenney/INDEX.txt for every 
 | `kenney/impact-sounds/` | SFX (CC0) | 130 OGG | footsteps (5 surfaces) + physics impacts |
 | `retro-horror-sfx/hl1/` | SFX (non-commercial) | 440 WAV | Half-Life 1 zombie, headcrab, ambience, doors, weapons |
 | `retro-horror-sfx/hl2/` | SFX (non-commercial) | 98 WAV | Half-Life 2 zombie, fast_zombie, zombie_poison, headcrab |
+| `farcry-crysis-sfx/crysis/` | SFX (non-commercial) | 70 OGG | Crysis Nanosuit modes, energy, nanovision, cephs, voice |
+| `farcry-crysis-sfx/farcry/` | SFX (non-commercial) | 237 MP3 | Far Cry Trigens (monsters), ambience, weapons, boats |
 
-1316 asset files in total (plus README, `RESOURCES.txt`, `PROMPT_HORROR_SFX.txt`, `kenney/INDEX.txt`, and `retro-horror-sfx/INDEX.txt`).
+1623 asset files in total (plus README, `RESOURCES.txt`, `PROMPT_HORROR_SFX.txt`, `PROMPT_FARCRY_CRYSIS_SFX.txt`, and `*/INDEX.txt`).
 
 ## Prompt 2: Retro & Horror Game SFX Add-on
 
@@ -197,6 +200,43 @@ Rules:
   hl2/fast_zombie/   (20 WAV)  fast zombie screams, leap, frenzy, breathe_loop, claw
   hl2/zombie_poison/ (19 WAV)  poison zombie heavy breathing, alert, throw, pain, die
   hl2/headcrab/      (14 WAV)  HL2 headcrab alert, attack, idle, pain, die
+```
+
+## Prompt 3: Far Cry & Crysis SFX Add-on
+
+Separate add-on prompt (also saved in `PROMPT_FARCRY_CRYSIS_SFX.txt`) for Crysis Nanosuit + Far Cry monsters/weapons/ambience (personal, non-commercial use):
+
+```text
+You have an additional Far Cry & Crysis SFX pack available over plain HTTPS (personal / non-commercial prototyping use). Base URL:
+
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/
+
+Download only what you need with curl/wget straight from the raw URL — never open the /blob/ page.
+Full manifest of all 307 direct raw URLs + byte sizes:
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/farcry-crysis-sfx/INDEX.txt
+
+Rules:
+1. Keep downloaded binaries out of the project repo (use assets/ or a cache dir).
+2. Crysis files are OGG; Far Cry files are MP3.
+3. For exact filenames before downloading, curl farcry-crysis-sfx/INDEX.txt first.
+
+=== CRYSIS NANOSUIT & CEPH SFX (farcry-crysis-sfx/crysis/nanosuit/, 70 OGG) ===
+  modes/armor/      (6 OGG)  mode_armor_on, mode_armor_hit_01..05
+  modes/cloak/      (4 OGG)  mode_cloak_on, mode_cloak_off, mode_cloak_loop, mode_cloak_shoot
+  modes/speed/      (3 OGG)  mode_speed_on, mode_speed_loop, mode_speed_stop
+  modes/power/      (2 OGG)  mode_power_on, mode_power_jump
+  energy/           (4 OGG)  energy_on, energy_off, energy_restoring, energy_very_low
+  binoculars/       (6 OGG)  binocular_on/off/loop/tagged/zoom_in/zoom_out
+  nanovision/       (3 OGG)  nanovision_on/off/loop
+  menu/             (2 OGG)  menu_show, menu_hide
+  misc/             (4 OGG)  defibrillate, interference, vaporize_hud, vaporize_world
+  psy_voices/       (5 OGG)  ceph_trooper_01..03, ceph_warrior_01..02
+  voice/           (31 OGG)  Nanosuit voice lines (Armor/Cloak/Speed/Strength/Critical)
+
+=== FAR CRY SFX (farcry-crysis-sfx/farcry/, 237 MP3) ===
+  farcry/trigens_boats/ (100 MP3)  Fat Boy, Fast Trigen, Stealth Trigen, Small Trigen monster roars/attacks/pain + boat engine sounds
+  farcry/ambience/      (100 MP3)  jungle, swamp, cave, wind, water, industrial bunker ambience
+  farcry/weapons_sfx/    (37 MP3)  Desert Eagle, MP5, P90, M4A1, G36, M249, OICW, AW50, frag grenade, alert, deep drums, mercenary callouts
 ```
 
 ## Notes
