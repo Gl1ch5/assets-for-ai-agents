@@ -91,11 +91,36 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/industrial_am
 https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar | car_mod/rar | 22 MB | VIPER_SRT для Assetto Corsa (KN5 + ini + текстуры), не glTF
 
 --------------------------------------------------------------------
-ИТОГО: 34 файла в репозитории (без .git и без этого файла).
+10. KENNEY CC0: ПАКИ АССЕТОВ (прямые raw-ссылки в папке kenney/)
+    Полный индекс всех 744 файлов Kenney с прямыми URL и размерами:
+    https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/INDEX.txt
+--------------------------------------------------------------------
+- Prototype Textures (78 PNG, 1024x1024, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/prototype-textures/{dark,green,light,orange,purple,red}/texture_01..13.png
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/prototype-textures/Preview.png
+- Particle Pack / VFX (80 прозрачных PNG, 512x512, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/particle-pack/<name>.png
+  Группы: circle_01..05, dirt_01..03, fire_01..02, flame_01..06, flare_01, light_01..03, magic_01..05, muzzle_01..05, scorch_01..03, scratch_01, slash_01..04, smoke_01..10, spark_01..07, star_01..09, symbol_01..02, trace_01..07, twirl_01..03, window_01..04
+- Prototype Kit (145 GLB-моделей + Textures/colormap.png, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/prototype-kit/<model>.glb
+  Группы: wall*, floor*, stairs*, shape*, door*, column*, pipe*, indicator*, number-*, button-*, lever-*, crate*, ladder*, target-*, animal-*, vehicle*, weapon-*, coin, flag, hat-*
+- Crosshair Pack (200 прицелов Outline 2x PNG, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/crosshair-pack/crosshair-000..199.png
+- Interface Sounds (100 OGG UI-звуков, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/interface-sounds/<name>.ogg
+  Группы: back, bong, click, close, confirmation, drop, error, glass, glitch, maximize, minimize, open, pluck, question, scratch, scroll, select, switch, tick, toggle
+- Impact Sounds (130 OGG звуков шагов и столкновений, CC0):
+  https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/impact-sounds/<name>.ogg
+  Шаги (000..004): footstep_{carpet,concrete,grass,snow,wood}_000..004.ogg
+  Удары (000..004): impactBell_heavy, impactGeneric_light, impactGlass_*, impactMetal_*, impactMining, impactPlank_medium, impactPlate_*, impactPunch_*, impactSoft_*, impactTin_medium, impactWood_*
+
+--------------------------------------------------------------------
+ИТОГО: 778 файлов в репозитории (без .git, README.md, RESOURCES.txt и INDEX.txt).
   - материалы (текстуры, превью, json): 17
   - текстура мозаики: 1
   - 3D-модель: 1
   - HDRI: 2
-  - звуки: 13
+  - звуки (корень): 13
   - модель машины (Assetto Corsa): 1
-  - файл, подготовленный для агентов: RESOURCES.txt
+  - Kenney CC0 (kenney/): 743 (текстуры, VFX, GLB-модели, прицелы, UI/impact SFX + Preview/License)
+  - индексы для агентов: RESOURCES.txt, kenney/INDEX.txt

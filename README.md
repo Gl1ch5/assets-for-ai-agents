@@ -93,10 +93,50 @@ Old Japanese street concrete: grey slabs, seams, grime, 2x2 m, 2K. Exterior, urb
   viper_srt.rar                      21.1 MB  VIPER_SRT Assetto Corsa car: KN5 body/collider, data/*.ini (aero, ai,
                                              brakes, car, cameras), textures, steer animation
 
+=== KENNEY CC0 PACKS (direct raw URLs under kenney/) ===
+Full manifest of all 744 direct raw URLs + byte sizes: kenney/INDEX.txt
+
+1. Prototype Textures (78 PNG, 1024x1024, CC0):
+   kenney/prototype-textures/{dark,green,light,orange,purple,red}/texture_01..13.png
+   Preview: kenney/prototype-textures/Preview.png
+
+2. Particle Pack / VFX (80 transparent PNG sprites, 512x512, CC0):
+   kenney/particle-pack/<name>.png
+   Groups: circle_01..05, dirt_01..03, fire_01..02, flame_01..06, flare_01, light_01..03,
+   magic_01..05, muzzle_01..05, scorch_01..03, scratch_01, slash_01..04, smoke_01..10,
+   spark_01..07, star_01..09, symbol_01..02, trace_01..07, twirl_01..03, window_01..04
+   Preview: kenney/particle-pack/Preview.png
+
+3. Prototype Kit (145 GLB 3D models + colormap, CC0):
+   kenney/prototype-kit/<model>.glb (and kenney/prototype-kit/Textures/colormap.png)
+   Groups: wall*, floor*, stairs*, shape*, door*, column*, pipe*, indicator*, number-*,
+   button-*, lever-*, crate*, ladder*, target-*, animal-*, vehicle*, weapon-*, coin, flag, hat-*
+   Preview: kenney/prototype-kit/Preview.png
+
+4. Crosshair Pack (200 outline 2x PNG reticles, CC0):
+   kenney/crosshair-pack/crosshair-000..199.png
+   Preview: kenney/crosshair-pack/Preview.png
+
+5. Interface Sounds (100 OGG UI SFX, CC0):
+   kenney/interface-sounds/<name>.ogg
+   Groups: back_001..004, bong_001, click_001..005, close_001..004, confirmation_001..004,
+   drop_001..004, error_001..008, glass_001..006, glitch_001..004, maximize_001..009,
+   minimize_001..009, open_001..004, pluck_001..002, question_001..004, scratch_001..005,
+   scroll_001..005, select_001..008, switch_001..007, tick_001..004, toggle_001..004
+
+6. Impact Sounds (130 OGG physics/footstep SFX, CC0):
+   kenney/impact-sounds/<name>.ogg
+   Footsteps (000..004): footstep_{carpet,concrete,grass,snow,wood}_000..004.ogg
+   Impacts (000..004): impactBell_heavy, impactGeneric_light, impactGlass_{light,medium,heavy},
+   impactMetal_{light,medium,heavy}, impactMining, impactPlank_medium,
+   impactPlate_{light,medium,heavy}, impactPunch_{medium,heavy}, impactSoft_{medium,heavy},
+   impactTin_medium, impactWood_{light,medium,heavy}
+
 Example:
   curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/tltleibaw_2K_Albedo.jpg
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/kenney/prototype-textures/dark/texture_01.png
 
-Full manifest with the same data: RESOURCES.txt
+Full manifest with the same data: RESOURCES.txt (and kenney/INDEX.txt for every Kenney file)
 
 ## Asset index
 
@@ -112,8 +152,14 @@ Full manifest with the same data: RESOURCES.txt
 | `Player_weapons_pistol_*` | SFX | 4 files | fire2, fire3, empty, reload1 |
 | `industrial_ambient_1.wav` | SFX | 700 KB | industrial ambience |
 | `viper_srt.rar` | Assetto Corsa mod | 22 MB | VIPER_SRT car (KN5 + ini + textures) |
+| `kenney/prototype-textures/` | textures (CC0) | 78 PNG | grid & block prototype textures, 6 colors |
+| `kenney/particle-pack/` | VFX sprites (CC0) | 80 PNG | transparent 512² particles (smoke, fire, sparks…) |
+| `kenney/prototype-kit/` | 3D models (CC0) | 145 GLB | modular level-prototyping blocks, stairs, doors |
+| `kenney/crosshair-pack/` | UI sprites (CC0) | 200 PNG | 2× outline reticles (`crosshair-000..199.png`) |
+| `kenney/interface-sounds/` | UI SFX (CC0) | 100 OGG | clicks, errors, toggles, confirm, glitch |
+| `kenney/impact-sounds/` | SFX (CC0) | 130 OGG | footsteps (5 surfaces) + physics impacts |
 
-34 asset files in total (plus this README and `RESOURCES.txt`).
+778 asset files in total (plus README, `RESOURCES.txt`, and `kenney/INDEX.txt`).
 
 ## Notes
 
