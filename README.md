@@ -163,9 +163,9 @@ Full manifest with the same data: RESOURCES.txt (and kenney/INDEX.txt for every 
 | `retro-horror-sfx/hl2/` | SFX (non-commercial) | 98 WAV | Half-Life 2 zombie, fast_zombie, zombie_poison, headcrab |
 | `farcry-crysis-sfx/crysis/` | SFX (non-commercial) | 70 OGG | Crysis Nanosuit modes, energy, nanovision, cephs, voice |
 | `farcry-crysis-sfx/farcry/` | SFX (non-commercial) | 237 MP3 | Far Cry Trigens (monsters), ambience, weapons, boats |
-| `fpv-drone-sfx/` | SFX (non-commercial) | 133 WAV | 5 games (HL2, HL1, GMod, Portal, DoD:S): drones, rotors, wind, air, explosions |
+| `fpv-drone-sfx/` | SFX + PBR + HDRI | 203 files | 5 games SFX (163 WAV) + 28 concrete & 8 grass 1K JPG PBR maps + 4 2K HDRIs |
 
-1756 asset files in total (plus README, `RESOURCES.txt`, `PROMPT_*.txt`, and `*/INDEX.txt`).
+1826 asset files in total (plus README, `RESOURCES.txt`, `PROMPT_*.txt`, and `*/INDEX.txt`).
 
 ## Prompt 2: Retro & Horror Game SFX Add-on
 
@@ -240,43 +240,66 @@ Rules:
   farcry/weapons_sfx/    (37 MP3)  Desert Eagle, MP5, P90, M4A1, G36, M249, OICW, AW50, frag grenade, alert, deep drums, mercenary callouts
 ```
 
-## Prompt 4: FPV Drone & Air Combat SFX Add-on
+## Prompt 4: FPV Drone & Air Combat Add-on (SFX + Concrete/Grass PBR + HDRIs)
 
-Separate add-on prompt (also saved in `PROMPT_FPV_DRONE_SFX.txt`) for FPV drone games — rotors, thrusters, wind/air ambience, lock/servo SFX and explosions from 5 classic games (personal, non-commercial use):
+Separate add-on prompt (also saved in `PROMPT_FPV_DRONE_SFX.txt`) for FPV drone games — rotors, thrusters, wind/air ambience, 3×10 extra drone SFX (alarms, crash impacts, radio telemetry), 28 concrete + 8 grass 1K JPG PBR maps, and 4 2K HDRIs:
 
 ```text
-You have an additional FPV Drone & Air Combat SFX pack from 5 classic games available over plain HTTPS (personal / non-commercial prototyping use). Base URL:
+You have an additional FPV Drone & Air Combat asset pack (SFX from 5 classic games + CC0 PBR concrete/grass textures + CC0 HDRIs) available over plain HTTPS (personal / non-commercial prototyping use for SFX; CC0 for textures & HDRIs). Base URL:
 
 https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/
 
 Download only what you need with curl/wget straight from the raw URL — never open the /blob/ page.
-Full manifest of all 133 direct raw URLs + byte sizes:
+Full manifest of all 203 direct raw URLs + byte sizes:
 https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/INDEX.txt
 
 Rules:
 1. Keep downloaded binaries out of the project repo (use assets/ or a cache dir).
-2. All files are WAV. Use *_loop.wav / wind / thruster files for continuous rotor/air beds and pitch-shift them dynamically by drone throttle/speed.
-3. For exact filenames before downloading, curl fpv-drone-sfx/INDEX.txt first.
+2. All SFX are WAV. Use *_loop.wav / wind / thruster files for continuous rotor/air beds and pitch-shift them dynamically by drone throttle/speed.
+3. PBR textures (concrete & grass) are 1K (1024x1024) seamless JPGs (CC0). Every material has 4 maps:
+   - *_diffuse.jpg  -> Albedo / Base Color (sRGB)
+   - *_nor_gl.jpg   -> Normal map, OpenGL convention (linear; flip G for DirectX/Unreal)
+   - *_rough.jpg    -> Roughness (linear / non-color)
+   - *_ao.jpg       -> Ambient Occlusion (linear / non-color)
+4. HDRIs are 2K (2048x1024) equirectangular Radiance .hdr files (CC0) for skybox + IBL lighting.
+5. For exact filenames before downloading, curl fpv-drone-sfx/INDEX.txt first.
 
-=== 1. HALF-LIFE 2 (fpv-drone-sfx/hl2/, 77 WAV) ===
-  hl2/manhack/           (14 WAV)  drone rotor hum, blade spin-up, grind/impact, gib
-  hl2/scanner/           (35 WAV)  flying drone loop, servo chatter, camera/lock beeps, discharge, energy explosion
-  hl2/attack_helicopter/  (9 WAV)  heavy rotor/turbine, charge up, crash/damage alarms, siren
-  hl2/wind/              (19 WAV)  high-altitude wind, gusts, wind hits, wasteland air ambience
+=== SFX: 5 CLASSIC GAMES (163 WAV) ===
+1. HALF-LIFE 2 (fpv-drone-sfx/hl2/, 77 WAV):
+   hl2/manhack/           (14 WAV)  drone rotor hum, blade spin-up, grind/impact, gib
+   hl2/scanner/           (35 WAV)  flying drone loop, servo chatter, camera/lock beeps, discharge, energy explosion
+   hl2/attack_helicopter/  (9 WAV)  heavy rotor/turbine, charge up, crash/damage alarms, siren
+   hl2/wind/              (19 WAV)  high-altitude wind, gusts, wind hits, wasteland air ambience
+2. HALF-LIFE 1 (fpv-drone-sfx/hl1/, 5 WAV):
+   hl1/apache/             (5 WAV)  ap_rotor1..4, ap_whine1 (rotor/turbine loops)
+3. GARRY'S MOD (fpv-drone-sfx/garrysmod/, 18 WAV):
+   garrysmod/thrusters/   (15 WAV)  hover00..02, jet00..02, air/thruster propulsion loops
+   garrysmod/ambient/      (3 WAV)  construct_tone, forest_day, forest_night (open-field outdoor beds)
+4. PORTAL (fpv-drone-sfx/portal/, 7 WAV):
+   portal/turret_sfx/      (7 WAV)  servo/mechanical fizzle, tipped/lock SFX (non-voice)
+5. DAY OF DEFEAT: SOURCE (fpv-drone-sfx/dods/, 26 WAV):
+   dods/air_wind/         (19 WAV)  airplane1..3, antiaircraft, heavywind, lightwind, windgust1..3, windmill, windnearwater, windwinter
+   dods/explosions/        (7 WAV)  rocket1, c4_explode1..2, explode3..5, explode_smoke
 
-=== 2. HALF-LIFE 1 (fpv-drone-sfx/hl1/, 5 WAV) ===
-  hl1/apache/             (5 WAV)  ap_rotor1..4, ap_whine1 (rotor/turbine loops)
+=== EXTRA DRONE SFX: 3 CATEGORIES x 10 WAV (30 WAV) ===
+   alarms_sirens/         (10 WAV)  air-raid sirens, APC/citadel/bank alarms, klaxon, flyby alert (HL2)
+   crash_impacts/         (10 WAV)  5 metal impacts + 5 concrete/boulder crash impacts (HL2)
+   radio_telemetry/       (10 WAV)  beep, blip, boop, warning, power_level_is, targetting_system, crtnoise, deadsignal1..2, signalgear1 (HL1)
 
-=== 3. GARRY'S MOD (fpv-drone-sfx/garrysmod/, 18 WAV) ===
-  garrysmod/thrusters/   (15 WAV)  hover00..02, jet00..02, air/thruster propulsion loops
-  garrysmod/ambient/      (3 WAV)  construct_tone, forest_day, forest_night (open-field outdoor beds)
+=== PBR TEXTURES: CONCRETE STRUCTURES & GRASS (CC0, 1K JPG, 4 maps each) ===
+Format: 1024x1024 JPG | Maps: _diffuse (sRGB), _nor_gl (OpenGL Normal, linear), _rough (linear), _ao (linear)
+- Concrete structures (textures/concrete/, 28 JPG = 7 materials x 4 maps):
+  brushed_concrete, concrete_block_wall, concrete_block_wall_02, concrete_brick_wall_001,
+  concrete_floor_02, concrete_floor_damaged_01, concrete_floor_worn_001
+- Grass / terrain (textures/grass/, 8 JPG = 2 materials x 4 maps):
+  leafy_grass, aerial_grass_rock
 
-=== 4. PORTAL (fpv-drone-sfx/portal/, 7 WAV) ===
-  portal/turret_sfx/      (7 WAV)  servo/mechanical fizzle, tipped/lock SFX (non-voice)
-
-=== 5. DAY OF DEFEAT: SOURCE (fpv-drone-sfx/dods/, 26 WAV) ===
-  dods/air_wind/         (19 WAV)  airplane1..3, antiaircraft, heavywind, lightwind, windgust1..3, windmill, windnearwater, windwinter
-  dods/explosions/        (7 WAV)  rocket1, c4_explode1..2, explode3..5, explode_smoke
+=== HDRI ENVIRONMENT MAPS (CC0, 2K Radiance .hdr) ===
+Format: 2048x1024 equirectangular .hdr (32-bit float Radiance HDR)
+- hdri/abandoned_construction_2k.hdr      abandoned concrete construction site
+- hdri/kloofendal_48d_partly_cloudy_2k.hdr  open outdoor sky, partly cloudy
+- hdri/industrial_sunset_02_2k.hdr        industrial yard at sunset
+- hdri/meadow_2_2k.hdr                    open grassy meadow
 ```
 
 ## Notes
