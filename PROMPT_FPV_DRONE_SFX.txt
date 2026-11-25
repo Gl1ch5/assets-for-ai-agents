@@ -1,0 +1,36 @@
+You have an additional FPV Drone & Air Combat SFX pack from 5 classic games available over plain HTTPS (personal / non-commercial prototyping use). Base URL:
+
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/
+
+Download only what you need with curl/wget straight from the raw URL — never open the /blob/ page.
+Full manifest of all 133 direct raw URLs + byte sizes:
+https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/INDEX.txt
+
+Rules:
+1. Keep downloaded binaries out of the project repo (use assets/ or a cache dir).
+2. All files are WAV. Use *_loop.wav / wind / thruster files for continuous rotor/air beds and pitch-shift them dynamically by drone throttle/speed.
+3. For exact filenames before downloading, curl fpv-drone-sfx/INDEX.txt first.
+
+=== 1. HALF-LIFE 2 (fpv-drone-sfx/hl2/, 77 WAV) ===
+  hl2/manhack/           (14 WAV)  drone rotor hum, blade spin-up, grind/impact, gib
+  hl2/scanner/           (35 WAV)  flying drone loop, servo chatter, camera/lock beeps, discharge, energy explosion
+  hl2/attack_helicopter/  (9 WAV)  heavy rotor/turbine, charge up, crash/damage alarms, siren
+  hl2/wind/              (19 WAV)  high-altitude wind, gusts, wind hits, wasteland air ambience
+
+=== 2. HALF-LIFE 1 (fpv-drone-sfx/hl1/, 5 WAV) ===
+  hl1/apache/             (5 WAV)  ap_rotor1..4, ap_whine1 (rotor/turbine loops)
+
+=== 3. GARRY'S MOD (fpv-drone-sfx/garrysmod/, 18 WAV) ===
+  garrysmod/thrusters/   (15 WAV)  hover00..02, jet00..02, air/thruster propulsion loops
+  garrysmod/ambient/      (3 WAV)  construct_tone, forest_day, forest_night (open-field outdoor beds)
+
+=== 4. PORTAL (fpv-drone-sfx/portal/, 7 WAV) ===
+  portal/turret_sfx/      (7 WAV)  servo/mechanical fizzle, tipped/lock SFX (non-voice)
+
+=== 5. DAY OF DEFEAT: SOURCE (fpv-drone-sfx/dods/, 26 WAV) ===
+  dods/air_wind/         (19 WAV)  airplane1..3, antiaircraft, heavywind, lightwind, windgust1..3, windmill, windnearwater, windwinter
+  dods/explosions/        (7 WAV)  rocket1, c4_explode1..2, explode3..5, explode_smoke
+
+Example:
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/INDEX.txt
+  curl -O https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/hl2/scanner/cbot_fly_loop.wav

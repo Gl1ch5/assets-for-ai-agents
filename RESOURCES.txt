@@ -138,7 +138,19 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   trigens_boats/ (100), ambience/ (100), weapons_sfx/ (37)
 
 --------------------------------------------------------------------
-ИТОГО: 1623 файла в репозитории (без .git, README.md, RESOURCES.txt, PROMPT_*.txt и INDEX.txt).
+13. FPV DRONE & AIR COMBAT SFX (5 игр, 133 WAV, не для коммерции)
+    Полный индекс всех 133 файлов с прямыми URL и размерами:
+    https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/fpv-drone-sfx/INDEX.txt
+    Отдельный промпт для агента: PROMPT_FPV_DRONE_SFX.txt
+--------------------------------------------------------------------
+- Half-Life 2 (fpv-drone-sfx/hl2/, 77 WAV): manhack/ (14), scanner/ (35), attack_helicopter/ (9), wind/ (19)
+- Half-Life 1 (fpv-drone-sfx/hl1/, 5 WAV): apache/ (5)
+- Garry's Mod (fpv-drone-sfx/garrysmod/, 18 WAV): thrusters/ (15), ambient/ (3)
+- Portal (fpv-drone-sfx/portal/, 7 WAV): turret_sfx/ (7)
+- Day of Defeat: Source (fpv-drone-sfx/dods/, 26 WAV): air_wind/ (19), explosions/ (7)
+
+--------------------------------------------------------------------
+ИТОГО: 1756 файлов в репозитории (без .git, README.md, RESOURCES.txt, PROMPT_*.txt и INDEX.txt).
   - материалы (текстуры, превью, json): 17
   - текстура мозаики: 1
   - 3D-модель: 1
@@ -148,4 +160,5 @@ https://raw.githubusercontent.com/Gl1ch5/assets-for-ai-agents/main/viper_srt.rar
   - Kenney CC0 (kenney/): 743 (текстуры, VFX, GLB-модели, прицелы, UI/impact SFX + Preview/License)
   - Retro & Horror SFX (retro-horror-sfx/): 538 WAV (Half-Life 1 & 2)
   - Far Cry & Crysis SFX (farcry-crysis-sfx/): 307 файлов (70 OGG + 237 MP3)
-  - индексы и промпты для агентов: RESOURCES.txt, PROMPT_HORROR_SFX.txt, PROMPT_FARCRY_CRYSIS_SFX.txt, */INDEX.txt
+  - FPV Drone SFX (fpv-drone-sfx/): 133 WAV (HL2, HL1, GMod, Portal, DoD:S)
+  - индексы и промпты для агентов: RESOURCES.txt, PROMPT_*.txt, */INDEX.txt
